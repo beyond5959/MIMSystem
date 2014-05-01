@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}	
+	<table>
+		<thead>
+			<tr>
+				<td><a href="/come"><img src="{{ static_url("images/1th.png") }}" />存货入库</a></td>
+				<td><a href="/nselect"><img src="{{ static_url("images/4th.png") }}" />当前库存查询</a></td>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td><a href="/go"><img src="{{ static_url("images/2th.png") }}" />存货出库</a></td>
+				<td><a href="/hselect"><img src="{{ static_url("images/3th.png") }}" />历史库存查询</a></td>
+			</tr>
+		</tfoot>
+	</table>
+{% end %}		
+	

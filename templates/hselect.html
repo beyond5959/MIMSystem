@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block style %}
+<style type="text/css">
+    .second{margin-left: 5em;}li{list-style-type: none;padding-top: 1.98em;font-family: "微软雅黑","黑体","宋体";}.nselect{margin-left: auto;margin-right: auto;}.button{cursor: pointer;background-image: url("{{ static_url("images/navbar.jpg") }}");width: 5em;font-size: 1.1em;}input[type="number"]{width: 3em;}select{width: 4.17em;}
+  </style>
+{% end %}
+{% block content %}
+	<center>
+	<form method="post" action="/hselect" target=_blank>
+	<ul>
+		<li>查询时间：从
+    <input class="Wdate" type="text" id="date1" onClick="WdatePicker()" value="2011-01-01" name="time1"></font></li>
+  	<li class="second">到
+    <input class="Wdate" type="text" id="date2" onClick="WdatePicker()" name="time2"></font></li>
+  	<li style="margin-left:1.5em;">物料编码：<input type="text" name="bianma" maxlength="10" /></li>
+  	<li style="margin-left:1.5em;">物料名称：<input type="text" name="name" maxlength="20" /></li>
+	<li style="margin-bottom:6em;"><input type="submit" class="button" value="立即查询" /></li>
+	</ul>
+    </form>
+	</center>
+	
+	{% end %}

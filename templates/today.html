@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+  {% block style %}
+   <style type="text/css">
+  li{list-style-type: none;padding-top: 1em;font-family: "微软雅黑","黑体","宋体"; }input[type="text"]{font-size:1em;}#quantity{font-size: 1em;width: 5em;}
+  </style> 
+{% end %}
+{% block content %} 
+ <div class="smallbox"> 
+    <form method="post" action="/today" target=_blank >
+   <br /><br /><br /><br /><br />
+        <li>选择时间:<input class="Wdate" type="text" id="date" onClick="WdatePicker()" name="time" /></li>
+        <center><li><input type="submit" class="button" value="立即查询" /></li></center></ul> 
+    </form>
+  </div>
+  {% end %}

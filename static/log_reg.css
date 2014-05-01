@@ -1,0 +1,80 @@
+.bigbox{
+	border: 2px solid;
+	width: 50em;
+	height: 35em;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	-webkit-box-shadow:2px 2px 50px #888;
+	-moz-box-shadow:2px 2px 50px #888;
+	-ms-box-shadow:2px 2px 50px #888;
+}
+#h2{
+	color: black;
+	width: 5em;
+	background-color: #fff;
+	-webkit-transform:rotate(-45deg);  /*transform元素中通过rotate()方法，元素顺时针旋转给定的角度。允许负值,元素将逆时针旋转  /*水平阴影距离、垂直阴影距离、模糊距离，以及阴影的颜色*/
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	text-align: center;
+	margin-top: -0.9em;
+	margin-left: 0.5em;
+}
+#h1{
+	color: black;
+	width: 5em;
+	border-top: 2px solid;
+	background-color: #fff;
+	-webkit-box-shadow:2px 2px 4px #888;
+	-webkit-transform:rotate(-45deg);  /*transform元素中通过rotate()方法，元素顺时针旋转给定的角度。允许负值,元素将逆时针旋转  /*水平阴影距离、垂直阴影距离、模糊距离，以及阴影的颜色*/
+	-moz-box-shadow:2px 2px 4px #888;
+	-moz-transform:rotate(-45deg);
+	-ms-box-shadow:2px 2px 4px #888;
+	-ms-transform:rotate(-45deg);
+	text-align: center;
+	margin-top: 1.7em;
+	margin-left: -0.75em;	
+}
+h3{
+	color: black;
+	width: 13em;
+	border-top: 2px solid;
+	background-color: #fff;
+	-webkit-box-shadow:2px 2px 4px #888;
+	-webkit-transform:rotate(-45deg);  /*transform元素中通过rotate()方法，元素顺时针旋转给定的角度。允许负值,元素将逆时针旋转  /*水平阴影距离、垂直阴影距离、模糊距离，以及阴影的颜色*/
+	-moz-box-shadow:2px 2px 4px #888;
+	-moz-transform:rotate(-45deg);
+	-ms-box-shadow:2px 2px 4px #888;
+	-ms-transform:rotate(-45deg);
+	text-align: center;
+	margin-top: -1em;
+	margin-left: -1.9em;	
+}
+.box1{
+	height: 8em;
+	width: 30em;
+	margin-left: 15em;
+}
+#hh{
+	text-align: center;
+	font-family: "微软雅黑","黑体","宋体";
+}
+.box1 ul{
+	list-style-type: none;
+	line-height: 3em;
+	font-family: "微软雅黑","黑体","宋体";
+}
+.span1{
+	margin-left: 6em;
+}
+.button{
+	font-family: "微软雅黑","黑体","宋体";
+	cursor: pointer;
+	background-image: url(images/navbar.jpg);
+	width: 5em;
+}
+.span2 a,li a{
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: "微软雅黑","黑体","宋体";
+}

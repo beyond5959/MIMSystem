@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+  {% block style %}
+   <style type="text/css">
+  li{list-style-type: none;padding-top: 1em;font-family: "微软雅黑","黑体","宋体"; }input[type="text"]{font-size:1em;}#quantity{font-size: 1em;width: 5em;}input[type="number"]{width: 3em;}
+  </style> 
+  <script type="text/javascript">
+  window.onload=function() {
+    a=document.getElementsByTagName('span').length
+    if (a>0) {
+      alert("入库成功！")
+    };   
+  }
+  </script>
+{% end %}
+{% block content %} 
+ <div class="smallbox"> 
+	<form method="post" action="/come" >
+    <ul>
+		     <li><label for="num">物料编码:</label>
+        	<input name="num" type="text" id="num" placeholder="请输入物料编码号" required="required" maxlength="10" /></li>
+        <li><label for="name">物料名称:</label>
+        	<input name="name" type="text" id="name" placeholder="请输入物料名称" required="required" maxlength="20" /></li>
+        <li><label for="quantity">入库数量:</label>
+        	<input name="quantity" type="number" min='1'  id="quantity" placeholder="入库数量" required="required" /></li>
+        <li>出库时间: <input class="Wdate" type="text" id="date" onClick="WdatePicker()" name="time" /></li>
+         <center><li><input type="submit" class="button" value="确认入库" /></li></center></ul> 
+	</form>
+  </div>
+  {% end %}

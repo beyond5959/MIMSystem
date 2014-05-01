@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <style type="text/css">span{font-family: "微软雅黑","黑体","宋体";font-weight:bold;font-size: 1.5em;}tr{font-family: "微软雅黑","黑体","宋体";  font-size: 1.2em;height: 2em;}</style>
+</head>
+<body style="background-color:rgb(240,240,240)">
+    <center><span>历史库存</span></center>
+     <center>
+    <table border=5>
+        <tr><th>物料编码</th><th>物料名称</th><th>数量</th><th>入库/出库时间</th><th>备注</th></tr>
+        {% for record in records %}
+        <tr>
+         <td>{{ record[0] }}</td>
+         <td>{{ record[1] }}</td>
+         <td>{{ record[2] }}</td>
+         <td>{{ record[3] }}</td>
+         <td>{{ record[4] }}</td>
+        </tr>
+        {% end %}
+     </table>
+     </center>
+</body>
+</html>

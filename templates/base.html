@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>物料库存管理系统</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css"  href="{{ static_url("style.css") }}" />
+  {% block style %}	
+{% end %}
+</head>
+<body>
+	<div class="bigbox">
+	<header>
+		<img src="{{ static_url("images/head.jpg") }}" alt="第一组物料管理系统" />
+			<nav>
+				<ul>
+					<li><a href="/index">首页</a></li>
+					<li><a href="/come">存货入库</a></li>
+					<li><a href="/go">存货出库</a></li>
+					<li><a href="/nselect">当前库存查询</a></li>
+					<li><a href="/hselect">历史库存查询</a></li>
+					<li><a href="/today">每日统计</a></li>
+				</ul>
+			</nav>
+	</header>
+{% block content %}	
+{% end %}	
+	<footer>
+		<br />
+		Powered by TJPU MIS11
+	</footer>
+	</div>
+	<script type="text/javascript" src="{{ static_url("jquery-1.9.1.js") }}"></script>
+	<script type="text/javascript" src="{{ static_url("script.js") }}"></script>
+	<script type="text/javascript" src="{{ static_url("My97DatePicker/WdatePicker.js") }}"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>物料库存管理系统</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css"  href="{{ static_url("log_reg.css") }}" />
+	<style type="text/css">
+	.code{
+	font-family:Arial;
+	font-style:italic;
+	font-weight:bolder;
+	border: 1px solid;
+	cursor:pointer;
+	text-align:center;
+  	}
+ 	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<h1 id="h1"></h1>
+		<h2 id="h2">MIS2011</h2>
+		<h3></h3>
+		<h1 id="hh">物料库存管理系统</h1>
+		<h2 id="hh">用户登录</h1>
+		<div class="box1">
+			<form method="post" action="/" >
+			<ul>
+				<li>用户名：<input type="text" required="required"    placeholder="手机号/邮箱"       id="username" name="username" maxlength="20" /><span style='font-size:0.9em;color:red;' id="uname"></span></li>
+				<li>密 &nbsp; 码：<input type="password" required="required" name="password" maxlength="20" /></li>
+				<li>验证码：<input type="text" required="required" style="width:4em;" id="yzm" /><span class="code" id="checkCode1"></span><a href="#" id="checkCode2" >换一张</a> <span style='font-size:0.9em;color:red;' id="yanzm"></span></li>
+			</ul>
+			<span class="span1"><input type="submit" value="立即登录" class="button" /></span>
+			<span class="span2"><a href="/regist">注册</a></span>
+			</form>
+		</div>
+	</div>
+<script type="text/javascript" src="{{ static_url("jquery-1.9.1.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("yzm.js") }}"></script>
+<script type="text/javascript" src="{{ static_url("regist.js") }}"></script>
+</body> 

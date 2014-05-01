@@ -1,0 +1,113 @@
+body{
+	background-color: rgb(220,220,220);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.bigbox{
+	margin-left: auto;
+	margin-right: auto;
+	width: 55em;
+	border-left: .1em solid;
+	border-right: .1em solid;
+}
+header img{
+	overflow: hidden;
+	width: 55em;
+	vertical-align: bottom; /*消除img块和ul块的间隙*/
+}
+article{
+	display: block;
+}
+footer{
+	background-image: url(images/foot.jpg);
+	height: 5em;
+	text-align: center;
+	font-family: cambria;
+}
+header li{
+	list-style-type: none;
+	display: inline;
+	font-weight: bold;
+	color: white;
+	line-height: 2em; /*让文字上下居中*/
+	padding-left: 1em;	
+}
+header ul{
+	width: 54em;
+	background-color: rgb(15,15,15);
+	height: 2em;
+	padding-left: 1em;
+	overflow: hidden;
+}
+td{	
+	font-size: 2em;
+	height: 5.64em;
+}
+table{
+	margin-right: auto;
+	margin-left: auto;
+	width: 30em;
+}
+a{
+	text-decoration: none;
+	font-weight: 400;
+	font-family: "微软雅黑","黑体","宋体";
+}
+a:hover{
+	color:red;
+    position:relative;
+    top:1px;
+    left:1px; 
+}
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active{
+	background-color: rgb(220,220,220);
+	font-weight: bold;
+	position:relative;
+    top:1px;
+    left:1px;
+    color: black;
+    cursor: default; 
+}
+header nav a:hover{
+	  background-color: rgb(220,220,220);
+	  font-weight: bold;
+}
+a:active{
+	position:relative;
+	top:2px;
+    left:2px;
+}
+header nav a{
+	float: left;/*让a标签自动适应宽度*/
+	display: block;
+	padding:0 1em;
+	color: white;
+}
+td a{
+	color: black;
+}
+.smallbox .button{
+	cursor: pointer;
+	background-image: url(images/navbar.jpg);
+	width: 5em;
+	font-size: 1.1em;
+	margin-top: 1em;
+	font-family: "微软雅黑","黑体","宋体";
+	}
+.button:active{
+	position:relative;
+	top:2px;
+    left:2px;
+}
+  .smallbox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    margin-top: 2em;
+    height:21em;
+  }
